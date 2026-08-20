@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "henriquebcn",
+  "description": "Skills de direção de fotografia e produção audiovisual com IA generativa.",
+  "owner": {
+    "name": "Henrique Torelli",
+    "url": "https://github.com/henriquebcn"
+  },
+  "metadata": { "pluginRoot": "./plugins" },
+  "plugins": [
+    {
+      "name": "fotografia-ia",
+      "source": "fotografia-ia",
+      "description": "Diretor de fotografia e supervisor de geração audiovisual: decupagem, prompt de imagem e vídeo, escolha de modelo, diagnóstico de geração.",
+      "version": "1.0.0",
+      "category": "creative",
+      "tags": ["cinematografia", "prompt-engineering", "imagem", "video", "magnific", "seedance", "kling"],
+      "author": { "name": "Henrique Torelli" }
+    }
+  ]
+}
