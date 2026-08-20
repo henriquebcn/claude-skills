@@ -6,13 +6,10 @@
     "name": "Henrique Torelli",
     "url": "https://github.com/henriquebcn"
   },
-  "metadata": {
-    "pluginRoot": "./plugins"
-  },
   "plugins": [
     {
       "name": "fotografia-ia",
-      "source": "./fotografia-ia",
+      "source": "./plugins/fotografia-ia",
       "description": "Diretor de fotografia e supervisor de geração audiovisual: decupagem, prompt de imagem e vídeo, escolha de modelo, diagnóstico de geração.",
       "version": "1.0.0",
       "category": "creative",
