@@ -263,6 +263,9 @@ Leia sob demanda. **Nunca carregue tudo.**
 - `references/20-quadro-unico-cme.md` + `21-quadro-unico-cme-dna.md` — Cinema Master Engine:
   regra das três camadas, hardware como adjetivo, micro-detalhe humano. Para imagem única. A
   camada de execução dele está datada (Midjourney/Flux) — escolha o modelo pelo `00`.
+- `references/21-cme-imagens/` — as cinco imagens de referência da doutrina, distribuídas com
+  o skill. São o benchmark de qualidade, não ilustração: abra-as para calibrar densidade de
+  quadro, separação de camadas e textura antes de escrever um prompt de quadro único.
 - `references/22-folha-de-setup-grace.md` — Protocolo GRACE: saída dupla, blocos fixos de setup,
   regra 80/20. O escudo negativo `--no ...` **não existe** neste stack.
 - `references/24-shutter-angle-flicker.txt` — dado técnico de obturador e flicker.
@@ -291,17 +294,16 @@ Leia sob demanda. **Nunca carregue tudo.**
 
 ## Extras locais do autor (opcionais)
 
-O skill funciona inteiro sem estes arquivos. Eles não são distribuídos — são acervo pesado que
-vive na máquina do autor. Abra apenas quando precisar de um dado específico, e **nunca** o
-conjunto:
+O skill funciona inteiro sem estes arquivos. Eles não são distribuídos — são manuais de
+fabricante, com copyright de terceiros, e pesam 38 MB. Abra apenas quando precisar de um dado
+específico, e **nunca** o conjunto:
 
-- Os 10 Pilares — manuais de ARRI, RED, Sony, Cooke e ZEISS, 38 MB:
+- Os 10 Pilares — manuais de ARRI, RED, Sony, Cooke e ZEISS:
   `~/Dropbox/works/claude/SKILLS/Diretor de Fotografia IA/Grace Cinema Shot/CONHECIMENTO/`
-- Imagens de referência do Cinema Master Engine:
-  `~/Dropbox/works/claude/SKILLS/Diretor de Fotografia IA/Cinema Master Engine/CONHECIMENTO/`
 
 Se o caminho não existir na máquina em que o skill está rodando, siga sem ele e diga que seguiu
-sem ele. Não invente o conteúdo de um arquivo que você não abriu.
+sem ele. Não invente o conteúdo de um arquivo que você não abriu. O dado de obturador e flicker
+que mais se usa desse acervo já está embutido em `references/24-shutter-angle-flicker.txt`.
 
 **Nunca copie prompt nem parâmetro** da pasta `PROVA - guia SOTA 2026 invalidado/`, no acervo do
 autor: ela carrega sintaxe fictícia e existe apenas como cadeia de prova.

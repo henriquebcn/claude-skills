@@ -1,6 +1,6 @@
 {
   "name": "fotografia-ia",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Diretor de fotografia e supervisor de geração audiovisual com IA. Decupagem, prompt de imagem e vídeo, escolha de modelo, diagnóstico de geração.",
   "author": { "name": "Henrique Torelli", "url": "https://github.com/henriquebcn" },
   "homepage": "https://github.com/henriquebcn/claude-skills",

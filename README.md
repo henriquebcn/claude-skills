@@ -42,6 +42,7 @@ trabalho fecha com uma régua mostrando em que etapa do pipeline você está.
 | `00` | camada de execução — catálogo e slugs, enum real de movimento de câmera, referências, keyframes, multishot, fluxo MCP |
 | `10`–`12` | craft — fundamentos, avançado, e IA generativa |
 | `20`–`22`, `24` | doutrinas de plano único (Cinema Master Engine, Grace Cinema Shot) e dado de obturador |
+| `21-cme-imagens/` | as cinco imagens de referência da doutrina Cinema Master Engine — benchmark de densidade, camadas e textura |
 | `23` | protocolo de engenharia reversa em 21 seções — o motor da porta DECUPAR |
 | `30`–`34` | Magnific Prompting Handbook absorvido |
 | `40`–`41` | Seedance Director Pro absorvido |

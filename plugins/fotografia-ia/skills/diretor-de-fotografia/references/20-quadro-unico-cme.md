@@ -42,22 +42,28 @@ Estética de Profundidade".
 3. **Master Prompt (EN):** O prompt técnico para o gerador.
 4. **Tradução e Decomposição (PT-BR):** Explique a lógica aplicada para o estudo do operador.
 
-## Arquivos de conhecimento anexados ao Gem
+## Imagens de referência — distribuídas com o skill
 
-Os quatro arquivos abaixo são os únicos declarados dentro do próprio `.gem`:
+As imagens estão em `references/21-cme-imagens/` e vêm junto na instalação. Abra-as quando
+precisar calibrar densidade de quadro, separação de camadas ou textura; são o benchmark de
+qualidade da doutrina, não ilustração.
+
+Os quatro arquivos abaixo são os declarados dentro do próprio `.gem`:
 
 | Arquivo | Tipo |
 | --- | --- |
-| `CONHECIMENTO/DNA-TECNICO-CINEMA-MASTER-ENGINE-V3.md` | text/markdown |
-| `CONHECIMENTO/Referencia_Macro.jpg` | image/jpeg |
-| `CONHECIMENTO/Referencia_Medium.jpg` | image/jpeg |
-| `CONHECIMENTO/Referencia_Wide.jpg` | image/jpeg |
+| `references/21-quadro-unico-cme-dna.md` | text/markdown |
+| `references/21-cme-imagens/Referencia_Macro.jpg` | image/jpeg |
+| `references/21-cme-imagens/Referencia_Medium.jpg` | image/jpeg |
+| `references/21-cme-imagens/Referencia_Wide.jpg` | image/jpeg |
 
 ## Acréscimos locais (fora do Gem)
 
 | Arquivo | Tipo | Origem |
 | --- | --- | --- |
-| `CONHECIMENTO/Referencia_Medium horizontal.png` | image/png, 1344×768 | acréscimo local |
+| `references/21-cme-imagens/Referencia_Medium horizontal.png` | image/png, 1344×768 | acréscimo local |
+
+Há ainda `Referencia_Medium horizontal v2 - mao nua.png`, variação da mesma REF sem luva.
 
 Versão 16:9 da REF 02 (medium close-up). As três referências do Gem são verticais, então esta
 é o único benchmark horizontal do acervo — use-a quando o entregável for landscape.
