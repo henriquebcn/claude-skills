@@ -298,11 +298,15 @@ O skill funciona inteiro sem estes arquivos. Eles não são distribuídos — s�
 fabricante, com copyright de terceiros, e pesam 38 MB. Abra apenas quando precisar de um dado
 específico, e **nunca** o conjunto:
 
-- Os 10 Pilares — manuais de ARRI, RED, Sony, Cooke e ZEISS:
-  `~/Dropbox/works/claude/SKILLS/Diretor de Fotografia IA/Grace Cinema Shot/CONHECIMENTO/`
+- Os 10 Pilares — manuais de ARRI, RED, Sony, Cooke e ZEISS, na subpasta
+  `Grace Cinema Shot/CONHECIMENTO/` da pasta do agente. Localize-a em vez de assumir o caminho,
+  porque ela já foi renomeada e movida mais de uma vez:
 
-Se o caminho não existir na máquina em que o skill está rodando, siga sem ele e diga que seguiu
-sem ele. Não invente o conteúdo de um arquivo que você não abriu. O dado de obturador e flicker
+  ```bash
+  find ~/Dropbox -maxdepth 6 -type d -path "*Grace Cinema Shot/CONHECIMENTO" 2>/dev/null
+  ```
+
+Se não achar, siga sem ele e diga que seguiu sem ele. Não invente o conteúdo de um arquivo que você não abriu. O dado de obturador e flicker
 que mais se usa desse acervo já está embutido em `references/24-shutter-angle-flicker.txt`.
 
 **Nunca copie prompt nem parâmetro** da pasta `PROVA - guia SOTA 2026 invalidado/`, no acervo do
