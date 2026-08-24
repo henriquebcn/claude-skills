@@ -1,0 +1,8 @@
+﻿REFERÊNCIA TÉCNICA: SHUTTER ANGLE VS FLICKER
+* Frequência de Energia: 60Hz (EUA/Brasil) vs 50Hz (Europa).
+* Regra de 180°: O ângulo padrão do obturador para movimento natural.
+* Cálculo de Flicker-Free: Para evitar cintilação em luzes Neon ou LED sob 60Hz:
+   * Em 24fps: Use Shutter Angle de 144° ou 172.8°.
+   * Em 30fps: Use Shutter Angle de 180°.
+   * Em 60fps: Use Shutter Angle de 180°.
+* Justificativa: O ângulo deve ser um múltiplo da frequência de pulso da luz para que cada frame capture o mesmo número de ciclos de iluminação.

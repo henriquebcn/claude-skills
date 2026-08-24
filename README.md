@@ -30,10 +30,22 @@ em 9 partes, diagnóstico por eixo isolado (identidade, mãos, ação, produto, 
 continuidade, lip sync) e um portão obrigatório de revisão do prompt em português antes de
 qualquer geração.
 
-**Conteúdo:** espinha de decisão + 7 bases de referência carregadas sob demanda — craft de
-cinematografia (fundamentos e avançado), craft específico de IA generativa, duas doutrinas de
-composição de plano único, e uma camada de execução com catálogo de modelos, enum real de
-movimento de câmera, regras de referência e keyframe.
+**Como entra:** com uma saudação ou um pedido vago, ele abre um card de quatro portas —
+DECUPAR, CRIAR, GERAR, CONSERTAR — e espera você dizer em português o que tem na mão. Se o seu
+primeiro pedido já for específico, ele pula o card e entra direto no trabalho. Toda resposta de
+trabalho fecha com uma régua mostrando em que etapa do pipeline você está.
+
+**Conteúdo:** espinha de decisão + 17 bases de referência carregadas sob demanda:
+
+| Faixa | O que é |
+| --- | --- |
+| `00` | camada de execução — catálogo e slugs, enum real de movimento de câmera, referências, keyframes, multishot, fluxo MCP |
+| `10`–`12` | craft — fundamentos, avançado, e IA generativa |
+| `20`–`22`, `24` | doutrinas de plano único (Cinema Master Engine, Grace Cinema Shot) e dado de obturador |
+| `23` | protocolo de engenharia reversa em 21 seções — o motor da porta DECUPAR |
+| `30`–`34` | Magnific Prompting Handbook absorvido |
+| `40`–`41` | Seedance Director Pro absorvido |
+| `50` | Image Architect absorvido |
 
 ### Antes de usar
 
@@ -42,17 +54,30 @@ reflete um plano específico num dado momento. **Slugs e limites mudam.** Revali
 `video_models_list` e `images_models_list` antes de tratar qualquer número como atual — se o seu
 plano libera outros modelos, os slugs não vão bater.
 
-### Complementos opcionais
+### O que foi absorvido, e como
 
-Três skills públicas ampliam o craft e valem instalar ao lado — não estão embutidas aqui de
-propósito, para que continuem recebendo as atualizações de seus autores:
+Três skills públicas estão **embutidas aqui**, não referenciadas — você não precisa instalar
+nada ao lado:
 
-- `magnific-prompting-guide` — blocos injetáveis, costuras de encadeamento, física de cena
-- `seedance-director-pro` — arquétipos de cena, timeline de efeitos, arco de energia
-- `image-architect` — modos de análise e território visual
+| Origem | Vira | O que fica |
+| --- | --- | --- |
+| `magnific-prompting-guide` | `30`–`33` | blocos injetáveis, as cinco costuras, doze movimentos, física de cena |
+| `seedance-director-pro` | `40`–`41` | arquétipos de cena, timeline de efeitos, densidade, arco de energia |
+| `image-architect` | `50` | modos de análise, território visual, moldura de seis dimensões |
 
-O `SKILL.md` já diz, para cada uma, o que nelas fica revogado em favor da espinha — sobretudo
-roteamento de modelo e mandatos de formato de saída, que conflitam entre si.
+Absorver não é copiar. Cada arquivo abre com um cabeçalho de precedência declarando o que nele
+**vale** e o que está **revogado** — porque as três discordam entre si e com o catálogo
+verificado da conta. O que foi revogado:
+
+- **roteamento de modelo** nas três — slug e limite vêm sempre da faixa `00`;
+- **a saída obrigatória em JSON só-ZH** do Seedance — ela proibiria o portão de revisão do
+  prompt em português, que aqui é regra dura;
+- **os orçamentos de token e a proibição de bullets** do Image Architect — o formato de resposta
+  é o da espinha;
+- **o catálogo de modelos** do handbook da Magnific, preservado em `34` apenas como prova de
+  por que é inválido.
+
+Nenhuma fonte absorvida revoga o portão de revisão em português.
 
 ## Licença
 
